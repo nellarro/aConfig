@@ -4,7 +4,7 @@ Hey, Jenell. It's Jenell.
 
 You might need a new computer some day. Get your git aliases up to date, girl. 
 
------
+----
 
 [user]
 	name = Jenell Pizarro
@@ -65,7 +65,7 @@ You might need a new computer some day. Get your git aliases up to date, girl.
 	required = true
   
   
------
+----
   
 Love, 
 
