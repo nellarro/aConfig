@@ -9,6 +9,7 @@ You might need a new computer some day. Get your git aliases up to date, girl.
 [user]
 	name = Jenell Pizarro
 	email = youremail@email.com
+	
 [alias]
 	alog = log --abbrev-commit --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
 	b = branch
@@ -40,24 +41,15 @@ You might need a new computer some day. Get your git aliases up to date, girl.
 [core]
 	excludesfile = /Users/{{user}}/.gitignore_global
 	editor = code --wait // use your favorite editor where {{code}} is. Let's be serious -- it's VSCode
+	
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path =
+	
 [mergetool "sourcetree"]
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
-# [bin]
-# LF=$'\\\x0A'
-# BRANCH_NAME=$(git symbolic-ref --short HEAD)
-#
-# if [[ $BRANCH_NAME =~ .*\/IZEAEX-[0-9]* ]]; then
-#
-# 	NUMBER=$(echo $BRANCH_NAME | sed -E 's/.*-([0-9]+).*/\1/')
-# 	MESSAGE="IZEAEX-$NUMBER"
-# 	if [ $NUMBER ]; then
-# 		sed -i.back "1s/^/$MESSAGE /" "$1"
-# 	fi
-# fi
+	
+	
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
